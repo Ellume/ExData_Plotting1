@@ -27,7 +27,8 @@ plot4 <- function () {
   png(file="plot4.png",width = 480, height = 480, units = "px")
   par(mfcol=c(2,2))
   par(bg="transparent")
-  par(cex=1)
+  par(cex=.75)
+  par(mar=c(2,2,1,1))
   
   # Plot 1
   plot(data.clean$datetime,
