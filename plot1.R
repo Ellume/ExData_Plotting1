@@ -27,7 +27,7 @@ plot1 <- function () {
   png(file="plot1.png",width = 480, height = 480, units = "px")
   par(mfcol=c(1,1))
   par(bg="transparent")
-  # par(cex=.75)
+  par(cex=1)
   hist(data.clean$Global_active_power,
        main="Global Active Power",
        xlab="Global Active Power (kilowatts)",
