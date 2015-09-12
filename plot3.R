@@ -24,10 +24,10 @@ plot3 <- function () {
   data.clean=cbind(datetime=data.datetime,data.used[3:9])
   
   # Write plot to png file
+  png(file="plot3.png",width = 480, height = 480, units = "px")
   par(mfcol=c(1,1))
   par(bg="transparent")
   par(cex=1)
-  png(file="plot3.png",width = 480, height = 480, units = "px")
   plot(data.clean$datetime,
        data.clean$Sub_metering_1,
        type="n",
