@@ -27,7 +27,7 @@ plot2 <- function () {
   png(file="plot2.png",width = 480, height = 480, units = "px")
   par(mfcol=c(1,1))
   par(bg="transparent")
-  par(cex=.75)
+  # par(cex=.75)
   plot(data.clean$datetime,
        data.clean$Global_active_power,
        type="l",
